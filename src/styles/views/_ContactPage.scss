@@ -1,0 +1,15 @@
+.contact-page-container {
+
+    text-align: center;
+
+    .add-contact {
+        margin-block-start: 10px;
+        align-self: center;
+        justify-self: center;
+        border-radius: 7px;
+        border: 1px solid black;
+        background-color: $clr3;
+        padding: 10px;
+    }
+
+}

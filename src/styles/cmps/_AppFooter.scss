@@ -1,0 +1,17 @@
+.main-footer {
+    background-color: $clr1;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    h3 {
+        margin-block-start: 0;
+    }
+    span {
+        padding: 5px;
+    }
+    .container {
+        padding: 10px;
+    }
+}

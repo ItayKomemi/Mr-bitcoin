@@ -1,0 +1,11 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    .app-header, .main-footer {
+        grid-column: 1/-1;
+    }
+
+    > *:not(.full) {
+        grid-column: 2;
+    }
+}

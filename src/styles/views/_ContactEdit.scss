@@ -1,0 +1,51 @@
+.contact-edit {
+    // display: flex;
+    // flex-direction: column;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 37%;
+    top: 20%;
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+    background-color: $clr3;
+    .edit-form {
+
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+
+        input {
+            background-color: $clr5;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+        
+        button {
+            margin-block-start: 10px;
+            border: 2px solid black;
+            font-weight: 700;
+            border-radius: 10px;
+            background-color: transparent;
+            padding: 7px;
+            background-color: rgba(141, 229, 229, 0.7);
+        }
+    }
+}
+
+
+@media (max-width: $narrow-breakpoint) {
+
+    .contact-edit {
+        overflow:hidden;
+        left: 13%;
+        top: 23%;
+        width: 300px;
+      }
+  }

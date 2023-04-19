@@ -1,0 +1,31 @@
+.contact-details {
+    background-color: $clr3;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    position: relative;
+    h3 {
+        font-family: Circular-book;
+        font-size: 18px;
+        margin: 4px 0 ;
+        padding: 2px;
+
+        .user-data {
+            font-weight: 200;
+        }
+    }
+    button {
+        border: none;
+        font-weight: 700;
+        padding: 7px;
+        margin-inline-start: 5px;
+        margin-block-end: 10px;
+        background-color: $clr1;
+
+    }
+    .transfer-funds-move-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

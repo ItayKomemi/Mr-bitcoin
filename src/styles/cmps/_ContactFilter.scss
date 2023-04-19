@@ -1,0 +1,14 @@
+.filter-section {
+    width: max-content;
+    margin-block-start: 12px;
+    input {
+        background-color: $clr5;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+
+        // ::placeholder{
+        //     color: white;
+        // }
+    }
+}

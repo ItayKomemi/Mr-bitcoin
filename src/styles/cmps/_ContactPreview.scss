@@ -1,0 +1,35 @@
+.contact-preview {
+    text-align: center;
+    background-color: $clr3;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    img {
+        width: 150px;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: space-between;
+    }
+    .edit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        background-color: rgba(10, 10, 141, 0.726);
+        border-radius: 20%;
+        margin: 5px;
+        width: 30px;
+        height: 15px;
+        font-size: 14px;
+        button {
+            color: white;
+        }
+    }
+    .delete-btn {
+        color:  rgba(10, 10, 141, 0.726);
+    }
+}
