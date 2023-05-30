@@ -1,0 +1,19 @@
+.chart-buttons-container {
+    margin-block-end: 1em;
+    display: flex;
+    button {
+            margin-inline-start: 1em;
+            background-color: #7b8cf5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          
+            &:hover {
+              background-color: darken(#6b7fff, 10%);
+            }
+    }
+}

@@ -1,17 +1,17 @@
 import React from 'react'
-import { Sparklines, SparklinesLine } from 'react-sparklines';
+import { Doughnut,SparklinesLine } from 'react-sparklines';
 
 
 export default function Chart({marketPrice,transactionsData}) {
   return (
     <>
-    <Sparklines data={marketPrice}>
+    <Doughnut data={marketPrice}>
     <SparklinesLine color="green" />
-    </Sparklines>
+    </Doughnut>
     
-    <Sparklines data={transactionsData}>
+    <Doughnut data={transactionsData}>
     <SparklinesLine color="green" />
-    </Sparklines>
+    </Doughnut>
     </>
 
   )

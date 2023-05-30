@@ -25,12 +25,12 @@ function App() {
           </Switch>
         </main>
 
-        <footer className="main-footer full">
+        {/* <footer className="main-footer full">
           <section className="container">
             <h3 className="logo">Mister BITcoin 2023</h3>
             <span>coffie rights &copy;</span>
           </section>
-        </footer>
+        </footer> */}
       </section>
     </Router>
   )
