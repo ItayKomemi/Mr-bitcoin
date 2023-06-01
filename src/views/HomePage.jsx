@@ -2,6 +2,7 @@ import { Component } from "react";
 import { UserService } from '../services/user.service.js'
 import { BitcoinService } from "../services/bitcoin.service.js";
 import MoveList from "../cmps/MoveList.jsx";
+import BitcoinImage from '../styles/imgs/bitcoin.dd8a16.png';
 
 export class HomePage extends Component {
 
@@ -24,7 +25,7 @@ export class HomePage extends Component {
         <article className="home-page-container">
           <div className="user-details">
             <h1>Hello {user.name}</h1>
-            <h2><img className="bitcoin-img" src="../styles/imgs/SL_0212121_40670_39.jpg" alt="" /> coins: {user.coins}$</h2>
+            <h2><img className="bitcoinImg" src={BitcoinImage} alt="" /> coins: {user.coins}$</h2>
             <h2>BTC: {bitcoinRate}</h2> 
           </div>
 

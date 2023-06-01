@@ -22,7 +22,7 @@ Chart.register(
 export class StatisticPage extends Component {
   state = {
     currChart: 'Trade Volume',
-    chartList: ['Trade Volume' , 'Block Size'],
+    chartList: ['Trade Volume', 'Market Price', 'Block Size'],
     chartData: {
       labels: [],
       datasets: [
@@ -44,7 +44,7 @@ export class StatisticPage extends Component {
 
   setTradeVolume = async () => {
     try {
-      const tradeVolumes = await BitcoinService.getMarketPrice()
+      const tradeVolumes = await BitcoinService.getTradeVolume()
       const tradeVolume = tradeVolumes.values.map((value) => value.y)
       const timestamps = tradeVolumes.values.map((value) =>
         new Date(value.x * 1000).toLocaleDateString()
@@ -115,6 +115,9 @@ export class StatisticPage extends Component {
   handleChartChange = (selectedChart) => {
     this.setState({ currChart: selectedChart }, async () => {
       switch (selectedChart) {
+        case 'Market Price':
+          await this.setMarketPrice()
+          break
         case 'Block Size':
           await this.setConfirmedTransactions()
           break
@@ -135,7 +138,7 @@ export class StatisticPage extends Component {
   }
 
   render() {
-    const { chartList, chartData, chartType, currChart } = this.state
+    const { chartList, chartData, chartType } = this.state
     if (!chartData) return <div className="loader"></div>
 
     const options = {

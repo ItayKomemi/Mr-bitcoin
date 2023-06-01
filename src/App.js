@@ -21,7 +21,11 @@ function App() {
             <Route path="/signup" component={SignupPage} />
             <Route path="/charts" component={StatisticPage} />
             <Route path="/contact" component={ContactPage} />
-            <Route path="/" component={HomePage} />
+            <Route exact path="/">
+              <div className="home-page-wrapper">
+                <HomePage />
+              </div>
+            </Route>
           </Switch>
         </main>
 
