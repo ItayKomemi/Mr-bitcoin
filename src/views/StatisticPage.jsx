@@ -22,7 +22,7 @@ Chart.register(
 export class StatisticPage extends Component {
   state = {
     currChart: 'Trade Volume',
-    chartList: ['Trade Volume', 'Market Price', 'Block Size'],
+    chartList: ['Trade Volume', 'Block Size'],
     chartData: {
       labels: [],
       datasets: [
@@ -44,7 +44,7 @@ export class StatisticPage extends Component {
 
   setTradeVolume = async () => {
     try {
-      const tradeVolumes = await BitcoinService.getTradeVolume()
+      const tradeVolumes = await BitcoinService.getMarketPrice()
       const tradeVolume = tradeVolumes.values.map((value) => value.y)
       const timestamps = tradeVolumes.values.map((value) =>
         new Date(value.x * 1000).toLocaleDateString()

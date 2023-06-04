@@ -20,12 +20,17 @@
 }
 
 .home-page-wrapper {
+    margin-block-start: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(0, 0, 0);
     height: 75vh;
     width: 100%;
     background-image: url("../imgs/crypto.png");
     background-size: cover;
     background-position: center;
-    aspect-ratio: 1-1;
+    
 }
 
 @media (max-width: $narrow-breakpoint) {
