@@ -152,7 +152,7 @@ export class StatisticPage extends Component {
             drawBorder: false,
           },
           ticks: {
-            color: 'white',
+            color: 'black',
           },
         },
         x: {
@@ -162,7 +162,7 @@ export class StatisticPage extends Component {
             display: false,
           },
           ticks: {
-            color: 'white',
+            color: 'black',
             callback: (value, index) => index + 1,
             maxTicksLimit: 34,
           },

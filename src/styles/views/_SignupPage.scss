@@ -1,54 +1,62 @@
 .signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 38%;
+  left: 41%;
+
+  form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 38%;
-    left: 41%;
-    
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: $clr3;
-      padding: 20px;
+    background-color: $clr3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    label {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      font-size: 16px;
+      margin-bottom: 20px;
+      background-color: $clr5;
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid #008cba;
+      }
+    }
+
+    button {
+      background-color: $clr1;
+      border: none;
+      padding: 10px 20px;
       border-radius: 5px;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-      
-      label {
-        font-size: 18px;
-        margin-bottom: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: #0077b3;
       }
-      
-      input {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        border-bottom: 1px solid #ccc;
-        font-size: 16px;
-        margin-bottom: 20px;
-        background-color: $clr5;
-        &:focus {
-          outline: none;
-          border-bottom: 1px solid #008CBA;
-        }
-      }
-      
-      button {
-        background-color: $clr1;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        &:hover {
-          background-color: #0077B3;
-        }
-        &:active {
-          transform: translateY(2px);
-        }
+      &:active {
+        transform: translateY(2px);
       }
     }
   }
+}
+
+@media (max-width: $narrow-breakpoint) {
+  .signup-container {
+    left: 14%;
+    top: 30%;
+    width: 300px;
+  }
+}

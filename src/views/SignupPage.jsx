@@ -11,7 +11,7 @@ export class SignupPage extends Component {
         ev.preventDefault();
         const { newUser } = this.state
         UserService.signup(newUser)
-        this.props.history.push("/home")
+        this.props.history.push("/")
     }
 
     signUp = (ev) => {

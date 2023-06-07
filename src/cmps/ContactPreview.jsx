@@ -9,7 +9,7 @@ export function ContactPreview({contact, onRemoveContact}) {
             <button className="delete-btn" onClick={() => onRemoveContact(contact._id)}>X</button>
         </section>
         <Link to={`/contact/${contact._id}`} className="contact-card">
-            <img src={`https://robohash.org/${contact._id}`} alt={contact.name} />
+            <img src={`https://robohash.org/${contact._id}?set=set5`} alt={contact.name} />
             <br></br>
             <span>{contact.name}</span>
         </Link>
